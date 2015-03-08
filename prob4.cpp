@@ -18,24 +18,24 @@ ANALYZE_TREE()
 {
   CallSite randcall("rand");
   Var a;
-  Expr b,c,d;
+
+
+  Expr b,c;
+  Const_int d;
   int v,w;
   
+  if(MATCH(d)){
+    if(d.llval() < 0){
+      SET_STATE(d,0);
+    }else if(d.llval() == 0){
+      SET_STATE(d,1);
+    }else if(d.llval() > 0){
+      SET_STATE(d,2);
+    }
+    
+  }
   if(MATCH(a = b)){
-    if(GET_STATE(a,v) && v == 1){
-      if(!(GET_STATE(b,w) && w == 1)){
-              cout << "Detected bug "<< a << " assigned to not random" << CURRENT_TREE << endl;
-
-        SET_STATE(a,2);
-      }
-    }
-    if(GET_STATE(b,v) && v == 2){
-      cout << "ERROR: assigned non-random value" << CURRENT_TREE << endl;
-    }else if(GET_STATE(b,v) && v == 1){
-      cout << "Assigning "<< a << " to random" << CURRENT_TREE << endl;
-      SET_STATE(a,1);
-    }
-
+    COPY_STATE(a,b);
   }
 
   if(((MATCH(b + c)|| MATCH(b - c) || MATCH(b / c) || MATCH(b * c)) && ((GET_STATE(b,v)) || (GET_STATE(c,w)))) || MATCH(randcall)){
