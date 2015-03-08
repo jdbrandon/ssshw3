@@ -1,0 +1,38 @@
+<error>
+<domain>STATIC_C</domain>
+<checker>DC.WEAK_CRYPTO</checker>
+<file>/home/user/Downloads/xpdf-3.02/splash/SplashScreen.cc</file>
+<function>_ZN12SplashScreen14buildSCDMatrixEi</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<main>true</main>
+<tag>dont_call</tag>
+<description>{CovLStrv2{{t{{code{rand}} should not be used for security related applications, as linear congruential algorithms are too easy to break.}}}}</description>
+<line>246</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{{t{Use a compliant random number generator, such as {code{/dev/random}} or {code{/dev/urandom}} on Unix-like systems, and {code{CryptGenRandom}} on Windows.}}}}</description>
+<line>246</line>
+</event>
+<extra></extra>
+<subcategory>none</subcategory>
+<antecedentMerge>
+<domain>STATIC_C</domain>
+<checker>SECURE_CODING</checker>
+<file>/home/user/Downloads/xpdf-3.02/splash/SplashScreen.cc</file>
+<function>_ZN12SplashScreen14buildSCDMatrixEi</function>
+<extra></extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Security best practices violations</category>
+<impact>Low</impact>
+<type>Calling risky function</type>
+<cwe>676</cwe>
+<localEffect>May result in a security violation</localEffect>
+<longDescription>The called function is unsafe for security related code</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

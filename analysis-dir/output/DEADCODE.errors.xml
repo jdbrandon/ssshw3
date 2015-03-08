@@ -1,0 +1,276 @@
+<error>
+<domain>STATIC_C</domain>
+<checker>DEADCODE</checker>
+<file>/home/user/Downloads/xpdf-3.02/splash/SplashFontEngine.cc</file>
+<function>_ZN16SplashFontEngine11loadCIDFontEP16SplashFontFileIDPci</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<tag>assignment</tag>
+<description>{CovLStrv2{{t{Assigning: {0} {1}= {2}.}{{code{fontFile}}}{}{{code{NULL}}}}}}</description>
+<line>200</line>
+</event>
+<event>
+<tag>null</tag>
+<description>{CovLStrv2{{t{At condition {0}, the value of {1} must be {2}.}{{code{fontFile}}}{{code{fontFile}}}{{code{NULL}}}}}}</description>
+<line>213</line>
+</event>
+<event>
+<tag>dead_error_condition</tag>
+<description>{CovLStrv2{{t{The condition {0} cannot be true.}{{code{fontFile}}}}}}</description>
+<line>213</line>
+</event>
+<event>
+<main>true</main>
+<tag>dead_error_line</tag>
+<description>{CovLStrv2{{t{Execution cannot reach the expression {0} inside this statement: {1}.}{{code{fontFile-&gt;fileName-&gt;getCString()}}}{{code{unlink((fontFile ? fontFile...}}}}}}</description>
+<line>213</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>effectively_constant</tag>
+<description>{CovLStrv2{{t{Local variable {0} is assigned only once, to a constant value, making it effectively constant throughout its scope. If this is not the intent, examine the logic to see if there is a missing assignment that would make {1} not remain constant. Otherwise, declaring {2} as const will suppress this defect.}{{code{fontFile}}}{{code{fontFile}}}{{code{fontFile}}}}}}</description>
+<line>213</line>
+</event>
+<extra>fontFile</extra>
+<subcategory>effectively_constant</subcategory>
+<typePropertiesGroup>
+<category>Possible Control flow issues</category>
+<impact>Low</impact>
+<type>'Constant' variable guards dead code</type>
+<cwe>561</cwe>
+<localEffect>A variable being assigned only once may be intentionally guarding disabled code, or it may represent incomplete logic where a missing assignment would make the variable not be constant.</localEffect>
+<longDescription>Variable assigned once to a constant guards dead code.</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<checker>DEADCODE</checker>
+<file>/home/user/Downloads/xpdf-3.02/splash/SplashFontEngine.cc</file>
+<function>_ZN16SplashFontEngine13loadType1FontEP16SplashFontFileIDPciPS2_</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<tag>assignment</tag>
+<description>{CovLStrv2{{t{Assigning: {0} {1}= {2}.}{{code{fontFile}}}{}{{code{NULL}}}}}}</description>
+<line>113</line>
+</event>
+<event>
+<tag>null</tag>
+<description>{CovLStrv2{{t{At condition {0}, the value of {1} must be {2}.}{{code{fontFile}}}{{code{fontFile}}}{{code{NULL}}}}}}</description>
+<line>131</line>
+</event>
+<event>
+<tag>dead_error_condition</tag>
+<description>{CovLStrv2{{t{The condition {0} cannot be true.}{{code{fontFile}}}}}}</description>
+<line>131</line>
+</event>
+<event>
+<main>true</main>
+<tag>dead_error_line</tag>
+<description>{CovLStrv2{{t{Execution cannot reach the expression {0} inside this statement: {1}.}{{code{fontFile-&gt;fileName-&gt;getCString()}}}{{code{unlink((fontFile ? fontFile...}}}}}}</description>
+<line>131</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>effectively_constant</tag>
+<description>{CovLStrv2{{t{Local variable {0} is assigned only once, to a constant value, making it effectively constant throughout its scope. If this is not the intent, examine the logic to see if there is a missing assignment that would make {1} not remain constant. Otherwise, declaring {2} as const will suppress this defect.}{{code{fontFile}}}{{code{fontFile}}}{{code{fontFile}}}}}}</description>
+<line>131</line>
+</event>
+<extra>fontFile</extra>
+<subcategory>effectively_constant</subcategory>
+<typePropertiesGroup>
+<category>Possible Control flow issues</category>
+<impact>Low</impact>
+<type>'Constant' variable guards dead code</type>
+<cwe>561</cwe>
+<localEffect>A variable being assigned only once may be intentionally guarding disabled code, or it may represent incomplete logic where a missing assignment would make the variable not be constant.</localEffect>
+<longDescription>Variable assigned once to a constant guards dead code.</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<checker>DEADCODE</checker>
+<file>/home/user/Downloads/xpdf-3.02/splash/SplashFontEngine.cc</file>
+<function>_ZN16SplashFontEngine14loadType1CFontEP16SplashFontFileIDPciPS2_</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<tag>assignment</tag>
+<description>{CovLStrv2{{t{Assigning: {0} {1}= {2}.}{{code{fontFile}}}{}{{code{NULL}}}}}}</description>
+<line>144</line>
+</event>
+<event>
+<tag>null</tag>
+<description>{CovLStrv2{{t{At condition {0}, the value of {1} must be {2}.}{{code{fontFile}}}{{code{fontFile}}}{{code{NULL}}}}}}</description>
+<line>162</line>
+</event>
+<event>
+<tag>dead_error_condition</tag>
+<description>{CovLStrv2{{t{The condition {0} cannot be true.}{{code{fontFile}}}}}}</description>
+<line>162</line>
+</event>
+<event>
+<main>true</main>
+<tag>dead_error_line</tag>
+<description>{CovLStrv2{{t{Execution cannot reach the expression {0} inside this statement: {1}.}{{code{fontFile-&gt;fileName-&gt;getCString()}}}{{code{unlink((fontFile ? fontFile...}}}}}}</description>
+<line>162</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>effectively_constant</tag>
+<description>{CovLStrv2{{t{Local variable {0} is assigned only once, to a constant value, making it effectively constant throughout its scope. If this is not the intent, examine the logic to see if there is a missing assignment that would make {1} not remain constant. Otherwise, declaring {2} as const will suppress this defect.}{{code{fontFile}}}{{code{fontFile}}}{{code{fontFile}}}}}}</description>
+<line>162</line>
+</event>
+<extra>fontFile</extra>
+<subcategory>effectively_constant</subcategory>
+<typePropertiesGroup>
+<category>Possible Control flow issues</category>
+<impact>Low</impact>
+<type>'Constant' variable guards dead code</type>
+<cwe>561</cwe>
+<localEffect>A variable being assigned only once may be intentionally guarding disabled code, or it may represent incomplete logic where a missing assignment would make the variable not be constant.</localEffect>
+<longDescription>Variable assigned once to a constant guards dead code.</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<checker>DEADCODE</checker>
+<file>/home/user/Downloads/xpdf-3.02/splash/SplashFontEngine.cc</file>
+<function>_ZN16SplashFontEngine16loadTrueTypeFontEP16SplashFontFileIDPciPti</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<tag>assignment</tag>
+<description>{CovLStrv2{{t{Assigning: {0} {1}= {2}.}{{code{fontFile}}}{}{{code{NULL}}}}}}</description>
+<line>252</line>
+</event>
+<event>
+<tag>null</tag>
+<description>{CovLStrv2{{t{At condition {0}, the value of {1} must be {2}.}{{code{fontFile}}}{{code{fontFile}}}{{code{NULL}}}}}}</description>
+<line>270</line>
+</event>
+<event>
+<tag>dead_error_condition</tag>
+<description>{CovLStrv2{{t{The condition {0} cannot be true.}{{code{fontFile}}}}}}</description>
+<line>270</line>
+</event>
+<event>
+<main>true</main>
+<tag>dead_error_line</tag>
+<description>{CovLStrv2{{t{Execution cannot reach the expression {0} inside this statement: {1}.}{{code{fontFile-&gt;fileName-&gt;getCString()}}}{{code{unlink((fontFile ? fontFile...}}}}}}</description>
+<line>270</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>effectively_constant</tag>
+<description>{CovLStrv2{{t{Local variable {0} is assigned only once, to a constant value, making it effectively constant throughout its scope. If this is not the intent, examine the logic to see if there is a missing assignment that would make {1} not remain constant. Otherwise, declaring {2} as const will suppress this defect.}{{code{fontFile}}}{{code{fontFile}}}{{code{fontFile}}}}}}</description>
+<line>270</line>
+</event>
+<extra>fontFile</extra>
+<subcategory>effectively_constant</subcategory>
+<typePropertiesGroup>
+<category>Possible Control flow issues</category>
+<impact>Low</impact>
+<type>'Constant' variable guards dead code</type>
+<cwe>561</cwe>
+<localEffect>A variable being assigned only once may be intentionally guarding disabled code, or it may represent incomplete logic where a missing assignment would make the variable not be constant.</localEffect>
+<longDescription>Variable assigned once to a constant guards dead code.</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<checker>DEADCODE</checker>
+<file>/home/user/Downloads/xpdf-3.02/splash/SplashFontEngine.cc</file>
+<function>_ZN16SplashFontEngine19loadOpenTypeCFFFontEP16SplashFontFileIDPci</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<tag>assignment</tag>
+<description>{CovLStrv2{{t{Assigning: {0} {1}= {2}.}{{code{fontFile}}}{}{{code{NULL}}}}}}</description>
+<line>225</line>
+</event>
+<event>
+<tag>null</tag>
+<description>{CovLStrv2{{t{At condition {0}, the value of {1} must be {2}.}{{code{fontFile}}}{{code{fontFile}}}{{code{NULL}}}}}}</description>
+<line>238</line>
+</event>
+<event>
+<tag>dead_error_condition</tag>
+<description>{CovLStrv2{{t{The condition {0} cannot be true.}{{code{fontFile}}}}}}</description>
+<line>238</line>
+</event>
+<event>
+<main>true</main>
+<tag>dead_error_line</tag>
+<description>{CovLStrv2{{t{Execution cannot reach the expression {0} inside this statement: {1}.}{{code{fontFile-&gt;fileName-&gt;getCString()}}}{{code{unlink((fontFile ? fontFile...}}}}}}</description>
+<line>238</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>effectively_constant</tag>
+<description>{CovLStrv2{{t{Local variable {0} is assigned only once, to a constant value, making it effectively constant throughout its scope. If this is not the intent, examine the logic to see if there is a missing assignment that would make {1} not remain constant. Otherwise, declaring {2} as const will suppress this defect.}{{code{fontFile}}}{{code{fontFile}}}{{code{fontFile}}}}}}</description>
+<line>238</line>
+</event>
+<extra>fontFile</extra>
+<subcategory>effectively_constant</subcategory>
+<typePropertiesGroup>
+<category>Possible Control flow issues</category>
+<impact>Low</impact>
+<type>'Constant' variable guards dead code</type>
+<cwe>561</cwe>
+<localEffect>A variable being assigned only once may be intentionally guarding disabled code, or it may represent incomplete logic where a missing assignment would make the variable not be constant.</localEffect>
+<longDescription>Variable assigned once to a constant guards dead code.</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<checker>DEADCODE</checker>
+<file>/home/user/Downloads/xpdf-3.02/splash/SplashFontEngine.cc</file>
+<function>_ZN16SplashFontEngine19loadOpenTypeT1CFontEP16SplashFontFileIDPciPS2_</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<tag>assignment</tag>
+<description>{CovLStrv2{{t{Assigning: {0} {1}= {2}.}{{code{fontFile}}}{}{{code{NULL}}}}}}</description>
+<line>175</line>
+</event>
+<event>
+<tag>null</tag>
+<description>{CovLStrv2{{t{At condition {0}, the value of {1} must be {2}.}{{code{fontFile}}}{{code{fontFile}}}{{code{NULL}}}}}}</description>
+<line>188</line>
+</event>
+<event>
+<tag>dead_error_condition</tag>
+<description>{CovLStrv2{{t{The condition {0} cannot be true.}{{code{fontFile}}}}}}</description>
+<line>188</line>
+</event>
+<event>
+<main>true</main>
+<tag>dead_error_line</tag>
+<description>{CovLStrv2{{t{Execution cannot reach the expression {0} inside this statement: {1}.}{{code{fontFile-&gt;fileName-&gt;getCString()}}}{{code{unlink((fontFile ? fontFile...}}}}}}</description>
+<line>188</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>effectively_constant</tag>
+<description>{CovLStrv2{{t{Local variable {0} is assigned only once, to a constant value, making it effectively constant throughout its scope. If this is not the intent, examine the logic to see if there is a missing assignment that would make {1} not remain constant. Otherwise, declaring {2} as const will suppress this defect.}{{code{fontFile}}}{{code{fontFile}}}{{code{fontFile}}}}}}</description>
+<line>188</line>
+</event>
+<extra>fontFile</extra>
+<subcategory>effectively_constant</subcategory>
+<typePropertiesGroup>
+<category>Possible Control flow issues</category>
+<impact>Low</impact>
+<type>'Constant' variable guards dead code</type>
+<cwe>561</cwe>
+<localEffect>A variable being assigned only once may be intentionally guarding disabled code, or it may represent incomplete logic where a missing assignment would make the variable not be constant.</localEffect>
+<longDescription>Variable assigned once to a constant guards dead code.</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>

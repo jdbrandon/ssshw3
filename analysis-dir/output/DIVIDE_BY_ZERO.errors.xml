@@ -1,0 +1,1250 @@
+<error>
+<domain>STATIC_C</domain>
+<checker>DIVIDE_BY_ZERO</checker>
+<file>/home/user/Downloads/xpdf-3.02/xpdf/Function.cc</file>
+<function>_ZN18PostScriptFunction4execEP7PSStacki</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{true /* 1 */}}}}}}</description>
+<line>1267</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>switch</tag>
+<description>{CovLStrv2{{t{Switch case value {0}}{{code{psInt}}}}}}</description>
+<line>1268</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>switch_case</tag>
+<description>{CovLStrv2{{t{Reached case {0}}{{code{psInt}}}}}}</description>
+<line>1269</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>break</tag>
+<description>{CovLStrv2{{t{Breaking from switch}}}}</description>
+<line>1271</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>switch_end</tag>
+<description>{CovLStrv2{{t{Reached end of switch}}}}</description>
+<line>1571</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>1572</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>1267</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{true /* 1 */}}}}}}</description>
+<line>1267</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>switch</tag>
+<description>{CovLStrv2{{t{Switch case value {0}}{{code{psOperator}}}}}}</description>
+<line>1268</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>switch_case</tag>
+<description>{CovLStrv2{{t{Reached case {0}}{{code{psOperator}}}}}}</description>
+<line>1275</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>switch</tag>
+<description>{CovLStrv2{{t{Switch case value {0}}{{code{psOpIdiv}}}}}}</description>
+<line>1276</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>switch_case</tag>
+<description>{CovLStrv2{{t{Reached case {0}}{{code{psOpIdiv}}}}}}</description>
+<line>1404</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>zero_return</tag>
+<description>{CovLStrv2{{t{Function call {0} returns 0.}{{code{stack-&gt;popInt()}}}}}}</description>
+<line>1405</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>/home/user/Downloads/xpdf-3.02/xpdf/Function.cc</file>
+<function>_ZN7PSStack6popIntEv</function>
+<key>9b0c71e24f86b0ceb000d3945553aa2a</key>
+<id>1</id>
+</model_ptr>
+</event>
+<event>
+<tag>assignment</tag>
+<description>{CovLStrv2{{t{Assigning: {0} {1}= {2}.}{{code{i2}}}{}{{code{stack-&gt;popInt()}}}}{t{ The value of {0} is now {1}.}{{code{i2}}}{0}}}}</description>
+<line>1405</line>
+</event>
+<event>
+<main>true</main>
+<tag>divide_by_zero</tag>
+<description>{CovLStrv2{{t{In expression {0}, division by expression {1} which may be zero has undefined behavior.}{{code{i1 / i2}}}{{code{i2}}}}}}</description>
+<line>1407</line>
+</event>
+<extra>i2</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Integer handling issues</category>
+<impact>Medium</impact>
+<type>Division or modulo by zero</type>
+<cwe>369</cwe>
+<localEffect>The program will have undefined behavior, likely a crash.</localEffect>
+<longDescription>Division or modulo by zero results in undefined behavior.</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<checker>DIVIDE_BY_ZERO</checker>
+<file>/home/user/Downloads/xpdf-3.02/xpdf/Function.cc</file>
+<function>_ZN18PostScriptFunction4execEP7PSStacki</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{true /* 1 */}}}}}}</description>
+<line>1267</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>switch</tag>
+<description>{CovLStrv2{{t{Switch case value {0}}{{code{psInt}}}}}}</description>
+<line>1268</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>switch_case</tag>
+<description>{CovLStrv2{{t{Reached case {0}}{{code{psInt}}}}}}</description>
+<line>1269</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>break</tag>
+<description>{CovLStrv2{{t{Breaking from switch}}}}</description>
+<line>1271</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>switch_end</tag>
+<description>{CovLStrv2{{t{Reached end of switch}}}}</description>
+<line>1571</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>1572</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>1267</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{true /* 1 */}}}}}}</description>
+<line>1267</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>switch</tag>
+<description>{CovLStrv2{{t{Switch case value {0}}{{code{psOperator}}}}}}</description>
+<line>1268</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>switch_case</tag>
+<description>{CovLStrv2{{t{Reached case {0}}{{code{psOperator}}}}}}</description>
+<line>1275</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>switch</tag>
+<description>{CovLStrv2{{t{Switch case value {0}}{{code{psOpMod}}}}}}</description>
+<line>1276</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>switch_case</tag>
+<description>{CovLStrv2{{t{Reached case {0}}{{code{psOpMod}}}}}}</description>
+<line>1440</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>zero_return</tag>
+<description>{CovLStrv2{{t{Function call {0} returns 0.}{{code{stack-&gt;popInt()}}}}}}</description>
+<line>1441</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>/home/user/Downloads/xpdf-3.02/xpdf/Function.cc</file>
+<function>_ZN7PSStack6popIntEv</function>
+<key>9b0c71e24f86b0ceb000d3945553aa2a</key>
+<id>1</id>
+</model_ptr>
+</event>
+<event>
+<tag>assignment</tag>
+<description>{CovLStrv2{{t{Assigning: {0} {1}= {2}.}{{code{i2}}}{}{{code{stack-&gt;popInt()}}}}{t{ The value of {0} is now {1}.}{{code{i2}}}{0}}}}</description>
+<line>1441</line>
+</event>
+<event>
+<main>true</main>
+<tag>divide_by_zero</tag>
+<description>{CovLStrv2{{t{In expression {0}, modulo by expression {1} which may be zero has undefined behavior.}{{code{i1 % i2}}}{{code{i2}}}}}}</description>
+<line>1443</line>
+</event>
+<extra>i2</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Integer handling issues</category>
+<impact>Medium</impact>
+<type>Division or modulo by zero</type>
+<cwe>369</cwe>
+<localEffect>The program will have undefined behavior, likely a crash.</localEffect>
+<longDescription>Division or modulo by zero results in undefined behavior.</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<checker>DIVIDE_BY_ZERO</checker>
+<file>/home/user/Downloads/xpdf-3.02/xpdf/Function.cc</file>
+<function>_ZN18PostScriptFunction4execEP7PSStacki</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{true /* 1 */}}}}}}</description>
+<line>1267</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>switch</tag>
+<description>{CovLStrv2{{t{Switch case value {0}}{{code{psInt}}}}}}</description>
+<line>1268</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>switch_case</tag>
+<description>{CovLStrv2{{t{Reached case {0}}{{code{psInt}}}}}}</description>
+<line>1269</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>break</tag>
+<description>{CovLStrv2{{t{Breaking from switch}}}}</description>
+<line>1271</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>switch_end</tag>
+<description>{CovLStrv2{{t{Reached end of switch}}}}</description>
+<line>1571</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>1572</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>1267</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{true /* 1 */}}}}}}</description>
+<line>1267</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>switch</tag>
+<description>{CovLStrv2{{t{Switch case value {0}}{{code{psOperator}}}}}}</description>
+<line>1268</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>switch_case</tag>
+<description>{CovLStrv2{{t{Reached case {0}}{{code{psOperator}}}}}}</description>
+<line>1275</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>switch</tag>
+<description>{CovLStrv2{{t{Switch case value {0}}{{code{psOpRoll}}}}}}</description>
+<line>1276</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>switch_case</tag>
+<description>{CovLStrv2{{t{Reached case {0}}{{code{psOpRoll}}}}}}</description>
+<line>1500</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>zero_return</tag>
+<description>{CovLStrv2{{t{Function call {0} returns 0.}{{code{stack-&gt;popInt()}}}}}}</description>
+<line>1502</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>/home/user/Downloads/xpdf-3.02/xpdf/Function.cc</file>
+<function>_ZN7PSStack6popIntEv</function>
+<key>9b0c71e24f86b0ceb000d3945553aa2a</key>
+<id>1</id>
+</model_ptr>
+</event>
+<event>
+<tag>assignment</tag>
+<description>{CovLStrv2{{t{Assigning: {0} {1}= {2}.}{{code{i1}}}{}{{code{stack-&gt;popInt()}}}}{t{ The value of {0} is now {1}.}{{code{i1}}}{0}}}}</description>
+<line>1502</line>
+</event>
+<event>
+<main>true</main>
+<tag>divide_by_zero</tag>
+<description>{CovLStrv2{{t{In function call {0}, modulo by expression {1} which may be zero has undefined behavior.}{{code{roll}}}{{code{i1}}}}}}</description>
+<line>1503</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>/home/user/Downloads/xpdf-3.02/xpdf/Function.cc</file>
+<function>_ZN7PSStack4rollEii</function>
+<key>bc83899857f88a03b3bf25253e529f3e</key>
+<id>6</id>
+</model_ptr>
+</event>
+<extra>i1</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Integer handling issues</category>
+<impact>Medium</impact>
+<type>Division or modulo by zero</type>
+<cwe>369</cwe>
+<localEffect>The program will have undefined behavior, likely a crash.</localEffect>
+<longDescription>Division or modulo by zero results in undefined behavior.</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<checker>DIVIDE_BY_ZERO</checker>
+<file>/home/user/Downloads/xpdf-3.02/splash/SplashScreen.cc</file>
+<function>_ZN12SplashScreen14buildSCDMatrixEi</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{y &lt; this-&gt;size}}}}}}</description>
+<line>237</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{x &lt; this-&gt;size}}}}}}</description>
+<line>238</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>242</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>238</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{x &lt; this-&gt;size}}}}}}</description>
+<line>238</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>242</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>238</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{x &lt; this-&gt;size}}}}}}</description>
+<line>238</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>242</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>243</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>237</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{y &lt; this-&gt;size}}}}}}</description>
+<line>237</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{x &lt; this-&gt;size}}}}}}</description>
+<line>238</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>242</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>238</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{x &lt; this-&gt;size}}}}}}</description>
+<line>238</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>242</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>243</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>237</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{y &lt; this-&gt;size}}}}}}</description>
+<line>237</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>243</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{i &lt; this-&gt;size * this-&gt;size}}}}}}</description>
+<line>244</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>253</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>244</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{i &lt; this-&gt;size * this-&gt;size}}}}}}</description>
+<line>244</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>253</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{y &lt;= r}}}}}}</description>
+<line>257</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{x &lt;= r}}}}}}</description>
+<line>258</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{x * y &lt;= r * r}}}}}}</description>
+<line>259</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>260</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>258</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{x &lt;= r}}}}}}</description>
+<line>258</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{x * y &lt;= r * r}}}}}}</description>
+<line>259</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>260</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>258</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{x &lt;= r}}}}}}</description>
+<line>258</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>260</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>261</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>257</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{y &lt;= r}}}}}}</description>
+<line>257</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{x &lt;= r}}}}}}</description>
+<line>258</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{x * y &lt;= r * r}}}}}}</description>
+<line>259</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>260</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>258</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{x &lt;= r}}}}}}</description>
+<line>258</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>260</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>261</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>257</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{y &lt;= r}}}}}}</description>
+<line>257</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>261</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{y &lt; this-&gt;size}}}}}}</description>
+<line>265</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{x &lt; this-&gt;size}}}}}}</description>
+<line>266</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>268</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>266</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{x &lt; this-&gt;size}}}}}}</description>
+<line>266</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>268</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>269</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>265</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{y &lt; this-&gt;size}}}}}}</description>
+<line>265</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>269</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{i &lt; this-&gt;size * this-&gt;size}}}}}}</description>
+<line>275</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{!grid[y * this-&gt;size + x]}}}}}}</description>
+<line>278</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{dotsLen == dotsSize}}}}}}</description>
+<line>279</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>if_end</tag>
+<description>{CovLStrv2{{t{End of if statement}}}}</description>
+<line>283</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{yy &lt;= r}}}}}}</description>
+<line>285</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{xx &lt;= r}}}}}}</description>
+<line>288</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{tmpl[yy * (r + 1) + xx]}}}}}}</description>
+<line>289</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>297</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>288</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{xx &lt;= r}}}}}}</description>
+<line>288</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>297</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>298</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>285</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{yy &lt;= r}}}}}}</description>
+<line>285</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>298</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>300</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>275</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{i &lt; this-&gt;size * this-&gt;size}}}}}}</description>
+<line>275</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>300</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{y &lt; this-&gt;size}}}}}}</description>
+<line>308</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{x &lt; this-&gt;size}}}}}}</description>
+<line>309</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{i &lt; dotsLen}}}}}}</description>
+<line>312</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>318</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>321</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>309</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{x &lt; this-&gt;size}}}}}}</description>
+<line>309</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>321</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>322</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>308</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{y &lt; this-&gt;size}}}}}}</description>
+<line>308</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>322</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{i &lt; dotsLen}}}}}}</description>
+<line>325</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>assignment</tag>
+<description>{CovLStrv2{{t{Assigning: {0} {1}= {2}.}{{code{n}}}{}{{code{0}}}}}}</description>
+<line>326</line>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{y &lt; this-&gt;size}}}}}}</description>
+<line>327</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{x &lt; this-&gt;size}}}}}}</description>
+<line>328</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{region[y * this-&gt;size + x] == i}}}}}}</description>
+<line>329</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>incr</tag>
+<description>{CovLStrv2{{t{Incrementing {0}.}{{code{n}}}}{t{ The value of {0} is now {1}.}{{code{n}}}{1}}}}</description>
+<line>333</line>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>335</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>328</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{x &lt; this-&gt;size}}}}}}</description>
+<line>328</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>335</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>336</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>327</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{y &lt; this-&gt;size}}}}}}</description>
+<line>327</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>336</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{j &lt; n}}}}}}</description>
+<line>338</line>
+<path_event></path_event>
+</event>
+<event>
+<main>true</main>
+<tag>divide_by_zero</tag>
+<description>{CovLStrv2{{t{In expression {0}, division by expression {1} which may be zero has undefined behavior.}{{code{254 * j / (n - 1)}}}{{code{n - 1}}}}}}</description>
+<line>340</line>
+</event>
+<extra>n</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Integer handling issues</category>
+<impact>Medium</impact>
+<type>Division or modulo by zero</type>
+<cwe>369</cwe>
+<localEffect>The program will have undefined behavior, likely a crash.</localEffect>
+<longDescription>Division or modulo by zero results in undefined behavior.</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>

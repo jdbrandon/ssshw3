@@ -1,0 +1,148 @@
+<error>
+<domain>STATIC_C</domain>
+<checker>BAD_SHIFT</checker>
+<file>/home/user/Downloads/xpdf-3.02/xpdf/Function.cc</file>
+<function>_ZN18PostScriptFunction4execEP7PSStacki</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{true /* 1 */}}}}}}</description>
+<line>1267</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>switch</tag>
+<description>{CovLStrv2{{t{Switch case value {0}}{{code{psInt}}}}}}</description>
+<line>1268</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>switch_case</tag>
+<description>{CovLStrv2{{t{Reached case {0}}{{code{psInt}}}}}}</description>
+<line>1269</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>break</tag>
+<description>{CovLStrv2{{t{Breaking from switch}}}}</description>
+<line>1271</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>switch_end</tag>
+<description>{CovLStrv2{{t{Reached end of switch}}}}</description>
+<line>1571</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>1572</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>1267</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{true /* 1 */}}}}}}</description>
+<line>1267</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>switch</tag>
+<description>{CovLStrv2{{t{Switch case value {0}}{{code{psOperator}}}}}}</description>
+<line>1268</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>switch_case</tag>
+<description>{CovLStrv2{{t{Reached case {0}}{{code{psOperator}}}}}}</description>
+<line>1275</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>switch</tag>
+<description>{CovLStrv2{{t{Switch case value {0}}{{code{psOpBitshift}}}}}}</description>
+<line>1276</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>switch_case</tag>
+<description>{CovLStrv2{{t{Reached case {0}}{{code{psOpBitshift}}}}}}</description>
+<line>1311</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{i2 &gt; 0}}}}}}</description>
+<line>1314</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>else_branch</tag>
+<description>{CovLStrv2{{t{Reached else branch}}}}</description>
+<line>1316</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{i2 &lt; 0}}}}}}</description>
+<line>1316</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_at_most</tag>
+<description>{CovLStrv2{{t{Checking {0} implies that {1} may be up to {2} on the true branch.}{{code{i2 &lt; 0}}}{{code{i2}}}{-1}}}}</description>
+<line>1316</line>
+</event>
+<event>
+<main>true</main>
+<tag>negative_shift</tag>
+<description>{CovLStrv2{{t{In expression {0}, shifting by a negative amount has undefined behavior.  The shift amount, {1}, is no more than {2}.}{{code{(Guint)i1 &gt;&gt; i2}}}{{code{i2}}}{-1}}}}</description>
+<line>1317</line>
+</event>
+<extra>i2</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Integer handling issues</category>
+<impact>Medium</impact>
+<type>Bad bit shift operation</type>
+<localEffect>The operaton may have an undefined behavior or yield to an unexpected result.</localEffect>
+<longDescription>A bit shift operation has a shift amount which is too large or has a negative value.</longDescription>
+<qualityKind>true</qualityKind>
+<eventSetCaptions>
+<eventSetCaption>Bad bit shift operation.</eventSetCaption>
+</eventSetCaptions>
+</typePropertiesGroup>
+</error>

@@ -1,0 +1,285 @@
+<error>
+<domain>STATIC_C</domain>
+<checker>UNUSED_VALUE</checker>
+<file>/home/user/Downloads/xpdf-3.02/xpdf/Gfx.cc</file>
+<function>_ZN3Gfx14doRadialShFillEP16GfxRadialShading</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{ta}}}{{code{t0}}}}}}</description>
+<line>2625</line>
+</event>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{ta}}}{{code{t1}}}}}}</description>
+<line>2630</line>
+</event>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{ta}}}{{code{t0}}}}}}</description>
+<line>2652</line>
+</event>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{ta}}}{{code{t1}}}}}}</description>
+<line>2657</line>
+</event>
+<event>
+<main>true</main>
+<tag>assigned_value</tag>
+<description>{CovLStrv2{{t{Assigning value from {0} to {1} here, but that stored value is overwritten before it can be used.}{{code{tb}}}{{code{ta}}}}}}</description>
+<line>2613</line>
+</event>
+<extra>tb</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Code maintainability issues</category>
+<impact>Low</impact>
+<type>Unused value</type>
+<cwe>563</cwe>
+<localEffect>An assigned value that is never used may represent unnecessary computation, an incorrect algorithm, or possibly the need for cleanup or refactoring.</localEffect>
+<longDescription>A value assigned to a variable is never used.</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<checker>UNUSED_VALUE</checker>
+<file>/home/user/Downloads/xpdf-3.02/xpdf/PSOutputDev.cc</file>
+<function>_ZN11PSOutputDev9doImageL2EP6ObjectP16GfxImageColorMapiiP6StreamiiiPiS5_iii</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value {1}.}{{code{i}}}{{code{0}}}}}}</description>
+<line>4386</line>
+</event>
+<event>
+<main>true</main>
+<tag>assigned_value</tag>
+<description>{CovLStrv2{{t{Assigning value from {0} to {1} here, but that stored value is overwritten before it can be used.}{{code{rects0Len}}}{{code{i}}}}}}</description>
+<line>4482</line>
+</event>
+<extra>rects0Len</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Code maintainability issues</category>
+<impact>Low</impact>
+<type>Unused value</type>
+<cwe>563</cwe>
+<localEffect>An assigned value that is never used may represent unnecessary computation, an incorrect algorithm, or possibly the need for cleanup or refactoring.</localEffect>
+<longDescription>A value assigned to a variable is never used.</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<checker>UNUSED_VALUE</checker>
+<file>/home/user/Downloads/xpdf-3.02/xpdf/PSOutputDev.cc</file>
+<function>_ZN11PSOutputDev9doImageL2EP6ObjectP16GfxImageColorMapiiP6StreamiiiPiS5_iii</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value {1}.}{{code{i}}}{{code{0}}}}}}</description>
+<line>4528</line>
+</event>
+<event>
+<main>true</main>
+<tag>assigned_value</tag>
+<description>{CovLStrv2{{t{Assigning value from {0} to {1} here, but that stored value is overwritten before it can be used.}{{code{rects0Len}}}{{code{i}}}}}}</description>
+<line>4584</line>
+</event>
+<extra>rects0Len</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Code maintainability issues</category>
+<impact>Low</impact>
+<type>Unused value</type>
+<cwe>563</cwe>
+<localEffect>An assigned value that is never used may represent unnecessary computation, an incorrect algorithm, or possibly the need for cleanup or refactoring.</localEffect>
+<longDescription>A value assigned to a variable is never used.</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<checker>UNUSED_VALUE</checker>
+<file>/home/user/Downloads/xpdf-3.02/splash/Splash.cc</file>
+<function>_ZN6Splash12strokeNarrowEP10SplashPath</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{dy}}}{{code{seg-&gt;y1 - seg-&gt;y0}}}}}}</description>
+<line>1187</line>
+</event>
+<event>
+<main>true</main>
+<tag>assigned_value</tag>
+<description>{CovLStrv2{{t{Assigning value from {0} to {1} here, but that stored value is overwritten before it can be used.}{{code{-dy}}}{{code{dy}}}}}}</description>
+<line>1193</line>
+</event>
+<extra>dy</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Code maintainability issues</category>
+<impact>Low</impact>
+<type>Unused value</type>
+<cwe>563</cwe>
+<localEffect>An assigned value that is never used may represent unnecessary computation, an incorrect algorithm, or possibly the need for cleanup or refactoring.</localEffect>
+<longDescription>A value assigned to a variable is never used.</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<checker>UNUSED_VALUE</checker>
+<file>/home/user/Downloads/xpdf-3.02/xpdf/TextOutputDev.cc</file>
+<function>_ZN8TextPage8coalesceEii</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{word1}}}{{code{pool-&gt;getPool(baseIdx)}}}}}}</description>
+<line>2369</line>
+</event>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{word1}}}{{code{pool-&gt;getPool(baseIdx)}}}}}}</description>
+<line>2404</line>
+</event>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{word1}}}{{code{pool-&gt;getPool(baseIdx)}}}}}}</description>
+<line>2438</line>
+</event>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{word1}}}{{code{pool-&gt;getPool(baseIdx)}}}}}}</description>
+<line>2479</line>
+</event>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{word1}}}{{code{pool-&gt;getPool(baseIdx)}}}}}}</description>
+<line>2501</line>
+</event>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{word1}}}{{code{pool-&gt;getPool(baseIdx)}}}}}}</description>
+<line>2543</line>
+</event>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{word1}}}{{code{pool-&gt;getPool(baseIdx)}}}}}}</description>
+<line>2565</line>
+</event>
+<event>
+<main>true</main>
+<tag>assigned_pointer</tag>
+<description>{CovLStrv2{{t{Assigning value from {0} to {1} here, but that stored value is overwritten before it can be used.}{{code{word1-&gt;next}}}{{code{word1}}}}}}</description>
+<line>2518</line>
+</event>
+<extra>next,word1</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Code maintainability issues</category>
+<impact>Low</impact>
+<type>Unused value</type>
+<cwe>563</cwe>
+<localEffect>An assigned value that is never used may represent unnecessary computation, an incorrect algorithm, or possibly the need for cleanup or refactoring.</localEffect>
+<longDescription>A value assigned to a variable is never used.</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<checker>UNUSED_VALUE</checker>
+<file>/home/user/Downloads/xpdf-3.02/xpdf/TextOutputDev.cc</file>
+<function>_ZN8TextPage8coalesceEii</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{word1}}}{{code{pool-&gt;getPool(baseIdx)}}}}}}</description>
+<line>2369</line>
+</event>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{word1}}}{{code{pool-&gt;getPool(baseIdx)}}}}}}</description>
+<line>2404</line>
+</event>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{word1}}}{{code{pool-&gt;getPool(baseIdx)}}}}}}</description>
+<line>2438</line>
+</event>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{word1}}}{{code{pool-&gt;getPool(baseIdx)}}}}}}</description>
+<line>2479</line>
+</event>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{word1}}}{{code{pool-&gt;getPool(baseIdx)}}}}}}</description>
+<line>2501</line>
+</event>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{word1}}}{{code{pool-&gt;getPool(baseIdx)}}}}}}</description>
+<line>2543</line>
+</event>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{word1}}}{{code{pool-&gt;getPool(baseIdx)}}}}}}</description>
+<line>2565</line>
+</event>
+<event>
+<main>true</main>
+<tag>assigned_pointer</tag>
+<description>{CovLStrv2{{t{Assigning value from {0} to {1} here, but that stored value is overwritten before it can be used.}{{code{word1-&gt;next}}}{{code{word1}}}}}}</description>
+<line>2582</line>
+</event>
+<extra>next,word1</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Code maintainability issues</category>
+<impact>Low</impact>
+<type>Unused value</type>
+<cwe>563</cwe>
+<localEffect>An assigned value that is never used may represent unnecessary computation, an incorrect algorithm, or possibly the need for cleanup or refactoring.</localEffect>
+<longDescription>A value assigned to a variable is never used.</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<checker>UNUSED_VALUE</checker>
+<file>/home/user/Downloads/xpdf-3.02/xpdf/GfxState.cc</file>
+<function>_ZN19GfxPatchMeshShading5parseEiP4DictP6Stream</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<tag>value_overwrite</tag>
+<description>{CovLStrv2{{t{Overwriting previous write to {0} with value from {1}.}{{code{p-&gt;color[0][1].c[j]}}}{{code{(patchesA + (nPatchesA - 1)).color[0][0].c[j]}}}}}}</description>
+<line>2942</line>
+</event>
+<event>
+<main>true</main>
+<tag>assigned_value</tag>
+<description>{CovLStrv2{{t{Assigning value from {0} to {1} here, but that stored value is overwritten before it can be used.}{{code{(patchesA + (nPatchesA - 1)).color[1][0].c[j]}}}{{code{p-&gt;color[0][1].c[j]}}}}}}</description>
+<line>2941</line>
+</event>
+<extra>c,color,j,nPatchesA,patchesA</extra>
+<subcategory>adjacent</subcategory>
+<typePropertiesGroup>
+<category>Incorrect expression</category>
+<impact>Medium</impact>
+<type>Unused value</type>
+<cwe>563</cwe>
+<localEffect>An assigned value that is never used may represent unnecessary computation, an incorrect algorithm, or possibly the need for cleanup or refactoring.</localEffect>
+<longDescription>A value assigned to a variable is never used.</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>

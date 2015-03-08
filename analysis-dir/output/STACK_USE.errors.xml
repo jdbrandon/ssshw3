@@ -1,0 +1,100 @@
+<error>
+<domain>STATIC_C</domain>
+<checker>STACK_USE</checker>
+<file>/home/user/Downloads/xpdf-3.02/splash/Splash.cc</file>
+<function>_ZN6Splash12flattenCurveEddddddddPddP10SplashPath</function>
+<score>25600</score>
+<ordered>false</ordered>
+<event>
+<main>true</main>
+<tag>stack_use_local_overflow</tag>
+<description>{CovLStrv2{{t{Local variable {0} uses {1} bytes of stack space, which exceeds the maximum single use of {2} bytes.}{{code{cx}}}{24600}{10000}}}}</description>
+<line>1308</line>
+</event>
+<extra>single_use_overflow</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Performance inefficiencies</category>
+<impact>Low</impact>
+<type>Large stack use</type>
+<cwe>400</cwe>
+<localEffect>Excessive stack use may cause stack overflow in embedded applications.  Stack size limits are configurable.</localEffect>
+<longDescription>Excessive use of stack memory by local variables or parameters</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<checker>STACK_USE</checker>
+<file>/home/user/Downloads/xpdf-3.02/splash/Splash.cc</file>
+<function>_ZN6Splash12flattenCurveEddddddddPddP10SplashPath</function>
+<score>25600</score>
+<ordered>false</ordered>
+<event>
+<main>true</main>
+<tag>stack_use_local_overflow</tag>
+<description>{CovLStrv2{{t{Local variable {0} uses {1} bytes of stack space, which exceeds the maximum single use of {2} bytes.}{{code{cy}}}{24600}{10000}}}}</description>
+<line>1309</line>
+</event>
+<extra>single_use_overflow</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Performance inefficiencies</category>
+<impact>Low</impact>
+<type>Large stack use</type>
+<cwe>400</cwe>
+<localEffect>Excessive stack use may cause stack overflow in embedded applications.  Stack size limits are configurable.</localEffect>
+<longDescription>Excessive use of stack memory by local variables or parameters</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<checker>STACK_USE</checker>
+<file>/home/user/Downloads/xpdf-3.02/splash/SplashXPath.cc</file>
+<function>_ZN11SplashXPath8addCurveEdddddddddiiii</function>
+<score>25600</score>
+<ordered>false</ordered>
+<event>
+<main>true</main>
+<tag>stack_use_local_overflow</tag>
+<description>{CovLStrv2{{t{Local variable {0} uses {1} bytes of stack space, which exceeds the maximum single use of {2} bytes.}{{code{cx}}}{24600}{10000}}}}</description>
+<line>265</line>
+</event>
+<extra>single_use_overflow</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Performance inefficiencies</category>
+<impact>Low</impact>
+<type>Large stack use</type>
+<cwe>400</cwe>
+<localEffect>Excessive stack use may cause stack overflow in embedded applications.  Stack size limits are configurable.</localEffect>
+<longDescription>Excessive use of stack memory by local variables or parameters</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<checker>STACK_USE</checker>
+<file>/home/user/Downloads/xpdf-3.02/splash/SplashXPath.cc</file>
+<function>_ZN11SplashXPath8addCurveEdddddddddiiii</function>
+<score>25600</score>
+<ordered>false</ordered>
+<event>
+<main>true</main>
+<tag>stack_use_local_overflow</tag>
+<description>{CovLStrv2{{t{Local variable {0} uses {1} bytes of stack space, which exceeds the maximum single use of {2} bytes.}{{code{cy}}}{24600}{10000}}}}</description>
+<line>266</line>
+</event>
+<extra>single_use_overflow</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Performance inefficiencies</category>
+<impact>Low</impact>
+<type>Large stack use</type>
+<cwe>400</cwe>
+<localEffect>Excessive stack use may cause stack overflow in embedded applications.  Stack size limits are configurable.</localEffect>
+<longDescription>Excessive use of stack memory by local variables or parameters</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>

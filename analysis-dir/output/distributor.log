@@ -1,0 +1,32 @@
+1425347072.615: DM started: dm_pid=16565
+1425347072.615: DM command line: /home/user/cov-analysis-linux-7.6.1/bin/cov-internal-dm --AM-port 52811 --log-file /home/user/Downloads/xpdf-3.02/analysis-dir/output/distributor.log -j 1 --AW-timeout 36000 /home/user/cov-analysis-linux-7.6.1/bin/cov-analyze --worker
+1425347072.615: Connecting to AM at 127.0.0.1:52811
+1425347072.615: Connected to AM: (local) 127.0.0.1:40894 - 127.0.0.1:52811 (remote)
+1425347072.615: Listening for DWs at 127.0.0.1:59339
+1425347072.615: Starting DW 1 with command line: /home/user/cov-analysis-linux-7.6.1/bin/cov-internal-dw --DM-port 59339 --DW-id 1
+1425347072.615: DW 1 started: dw_pid=16567
+1425347072.634: DW 1 log: 1425347072.634: Connecting to DM on 127.0.0.1:59339
+1425347072.635: Received a connection from a DW: 127.0.0.1:58480
+1425347072.635: DW 1 log: 1425347072.634: Connected to the DM: (local) 127.0.0.1:58480 - 127.0.0.1:59339 (remote)
+1425347072.635: DW 1 log: 1425347072.634: Sending DWDM_INIT: dw_id=1, benchmark=0
+1425347072.635: Received DWDM_INIT: dw_id=1, benchmark=0
+1425347072.635: Stopping to listen for new DWs
+1425347072.635: Sending DMDW_INIT to DW 1: aw_command_line=["/home/user/cov-analysis-linux-7.6.1/bin/cov-analyze","--worker"], aw_image=(empty), awFaults=[], awTimeoutSeconds=36000
+1425347072.635: DW 1 log: 1425347072.634: Received DMDW_INIT: aw_command_line=["/home/user/cov-analysis-linux-7.6.1/bin/cov-analyze","--worker"], aw_image=(empty), awFaults=[], awTimeoutSeconds=36000
+1425347072.635: DW 1 log: 1425347072.634: Started listening for AW at 127.0.0.1:34014
+1425347072.635: DW 1 log: 1425347072.634: Starting AW with command line (COVERITY_DW_PORT=34014): /home/user/cov-analysis-linux-7.6.1/bin/cov-analyze --worker
+1425347072.636: DW 1 log: 1425347072.634: AW started: aw_pid=16569
+1425347072.653: DW 1 log: 1425347072.653: DW 1 received connection from AW: (local) 127.0.0.1:34014 - 127.0.0.1:42687 (remote)
+1425347372.630: dm-summary: elapsed_time_ms=300015, am_to_dm_wus=5166, dm_to_am_wurs=5051
+1425347372.630: dw-summary: dw_id=1, state=connected, wus_outstanding=2, wus_sent=5053, wurs_received=5051, active_ms=299749, idle_ms=246
+1425347483.228: AM closed the connection, DM shutting down
+1425347483.228: Disconnecting DW 1
+1425347483.230: DW 1 log: 1425347483.230: DW 1: the DM closed the connection, DW shutting down
+1425347483.230: DW 1 log: 1425347483.230: DW 1 summary: aw_starts=1, wurs_sent=5167, total_awms=399820, total_dwms=410346
+1425347483.230: DW 1 log: 1425347483.230: Disconnecting AW
+1425347483.256: DW 1 log: 1425347483.256: AW exited with code 0
+1425347483.256: DW 1 log: AW peak mem bytes: 622948352
+1425347483.257: DW 1 exited with code 0
+1425347483.257: dm-summary: elapsed_time_ms=410642, am_to_dm_wus=5167, dm_to_am_wurs=5167
+1425347483.257: dw-summary: dw_id=1, state=inactive, wus_outstanding=0, wus_sent=5167, wurs_received=5167, active_ms=410347, idle_ms=246
+1425347483.257: DM exiting with code 0

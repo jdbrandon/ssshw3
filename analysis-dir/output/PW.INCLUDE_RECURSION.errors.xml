@@ -1,0 +1,41 @@
+<error>
+<domain>STATIC_C</domain>
+<checker>PW.INCLUDE_RECURSION</checker>
+<file>/home/user/Downloads/xpdf-3.02/xpdf/Array.h</file>
+<function>unknown</function>
+<score>20</score>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>include_recursion</tag>
+<description>{CovLStr{v1}{#include file {0} includes itself{1}}{&quot;Object.h&quot;}{: Object.h -&gt; Array.h -&gt; Object.h (other events go to each file)}}</description>
+<line>18</line>
+</event>
+<event>
+<tag>primary_file</tag>
+<description>{CovLStrv2{{t{During compilation of file '{0}'}{/home/user/Downloads/xpdf-3.02/xpdf/Annot.cc}}}}</description>
+<line>18</line>
+</event>
+<event>
+<tag>caretline</tag>
+<description>                   ^</description>
+<line>18</line>
+</event>
+<event>
+<tag>include_recursion</tag>
+<description>{CovLStr{v1}{#include file {0} includes itself{1}}{&quot;Object.h&quot;}{: Object.h -&gt; Array.h -&gt; Object.h}}</description>
+<file>/home/user/Downloads/xpdf-3.02/xpdf/Object.h</file>
+<line>220</line>
+</event>
+<mergekey>d4fe96059da090b9d0f09e63e1835a4a</mergekey>
+<extra>#include &quot;Object.h&quot;</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Build system issues</category>
+<impact>Low</impact>
+<type>Recursion in included headers</type>
+<localEffect>Compilation errors or even run-time errors (in the presence of function overloading) can result.</localEffect>
+<longDescription>Recursion in included header files</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
