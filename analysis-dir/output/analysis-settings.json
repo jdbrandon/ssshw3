@@ -1,8 +1,0 @@
-{
-  covAnalyzeArgs : [
-    "--all"
-  ],
-  fileCheckerOptions : [],
-  fbExcludeConfigurations : [],
-  fbIncludeConfiguration : null
-}
