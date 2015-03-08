@@ -1,0 +1,43 @@
+cmdline: command line: ./prob3 --dir analysis-dir --force --prevent-root /home/user/cov-analysis-linux-7.6.1 
+cmdline: parsed cmdline: [
+cmdline:   { name: "dir", args: [ "analysis-dir" ] },
+cmdline:   { name: "force" },
+cmdline:   { name: "prevent-root", args: [ "/home/user/cov-analysis-linux-7.6.1" ] },
+cmdline:   { name: "config", args: [ "/home/user/cov-analysis-linux-7.6.1/config/coverity_config.xml" ] },
+cmdline: ]
+startup: am_pid=6970
+startup: detected platform: Linux 3.13.0-32-generic i686
+startup: target platform: linux
+startup: Detected 1 logical cpus
+startup: Detected 1 cpu cores
+startup: host name: user-VirtualBox
+startup: user name: user
+startup: Analysis version: 7.6.1 (f9ca8aa2d6 p-harmony-push-21098.590)
+startup: temp directory: /tmp/cov-user/112e175efef8fd9567508d17e8022863
+startup: enable_constraint_fpp=0
+startup: current time: 2015-Mar-07 23:10:26
+startup: Detected amount of memory: 2064016kb
+startup: Limiting memory to 1857614kb
+wlink: Skipping web-app linking, no archives
+emitdb: callgraph.cpp:2102 11111111
+emitdb: callgraph.cpp:2123 11000011
+emitdb: callgraph.cpp:2144 11000011
+rta: Not running RTA because it doesn't apply to current languages
+emitdb: callgraph.cpp:2154 11000000
+wul: sdk0 wu_sz=557 1 n: foo in TU 1
+summary: Analysis summary report:
+summary: ------------------------
+summary: Files analyzed                 : 1
+summary: Total LoC input to cov-analyze : 6658
+summary: Functions analyzed             : 1
+summary: Paths analyzed                 : 1
+summary: Time taken by analysis         : 00:00:01
+summary: Defect occurrences found       : 0
+summary: 
+summary: Number of functions: 1
+summary: out_of_memory count: 0
+summary: paths_exceeded count: 0
+summary: recoverable failures: 0
+mem: AM peak mem bytes: 32677888
+assert: suppressed asserts: workers=0, master=0
+failures: recoverable failures: workers=0, master=0

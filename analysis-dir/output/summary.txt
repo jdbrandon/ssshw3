@@ -1,0 +1,10 @@
+./prob3 --dir analysis-dir --force --prevent-root /home/user/cov-analysis-linux-7.6.1 
+Analysis summary report:
+------------------------
+Files analyzed                 : 1
+Total LoC input to cov-analyze : 6658
+Functions analyzed             : 1
+Paths analyzed                 : 1
+Time taken by analysis         : 00:00:01
+Defect occurrences found       : 0
+

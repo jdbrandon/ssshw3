@@ -1,0 +1,28 @@
+timer                                          ms      calls
+------------------------------------------------------------
+Looking for translation units                   0          1
+Computing links for translation units           1          1
+xfer symbol cache                               0          1
+Computing virtual overrides                     0          1
+Computing callgraph                             0          1
+Topologically sorting functions                 2          1
+hello_pass1                                     0          1
+hello_pass2                                     0          1
+Computing node costs                            0          1
+Analysis run                                    1          1
+  loadFromEmit                                  0          1
+  hello_pass1                                   1          1
+
+activity                                       ms      calls
+------------------------------------------------------------
+Looking for translation units                   0          1
+Computing links for translation units           1          1
+xfer symbol cache                               0          1
+Computing virtual overrides                     0          1
+Computing callgraph                             0          1
+Topologically sorting functions                 2          1
+hello_pass1                                     1          2
+hello_pass2                                     0          1
+Computing node costs                            0          1
+Analysis run                                    1          1
+loadFromEmit                                    0          1
