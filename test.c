@@ -19,6 +19,16 @@ int foo()
   x = y + 5;
   strcat(0,0);
   strcpy(0,0);
+  
+
+
+  //prob4
+  x << -1;
+  x >> 0;
+  x << 1;
+  y = -1;
+  x << y;
+  x >> y;
   return x;
 }
 

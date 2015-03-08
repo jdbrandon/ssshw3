@@ -16,21 +16,18 @@ START_EXTEND_CHECKER( hello, int_store );
 
 ANALYZE_TREE()
 {
-  CallSite randcall("rand");
   Var a;
-
-
   Expr b,c;
   Const_int d;
-  int v,w;
+  int v;
   
   if(MATCH(d)){
     if(d.llval() < 0){
-      SET_STATE(d,0);
+      SET_STATE(CURRENT_TREE,0);
     }else if(d.llval() == 0){
-      SET_STATE(d,1);
+      SET_STATE(CURRENT_TREE,1);
     }else if(d.llval() > 0){
-      SET_STATE(d,2);
+      SET_STATE(CURRENT_TREE,2);
     }
     
   }
@@ -38,21 +35,11 @@ ANALYZE_TREE()
     COPY_STATE(a,b);
   }
 
-  if(((MATCH(b + c)|| MATCH(b - c) || MATCH(b / c) || MATCH(b * c)) && ((GET_STATE(b,v)) || (GET_STATE(c,w)))) || MATCH(randcall)){
-    if(MATCH(randcall) || v == 1 || w == 1){
-      SET_STATE(CURRENT_TREE,1);
-    }else if(v == 2 || w == 2){
-      SET_STATE(CURRENT_TREE,2);
-      cout << "Detected bug assigned to not random" << CURRENT_TREE << endl;
-
+  if(MATCH(b << c) || MATCH(b >> c)){
+    if(GET_STATE(c,v) && v == 0){
+      cout << "ERROR: Cannot bit shift by a negative number " << CURRENT_TREE << endl;
     }
-
-    
   }
-  //if(MATCH(a = randcall)) {
-   //   cout << "Assigning "<< a << " to random" << CURRENT_TREE << endl;
-   // SET_STATE(a,1);
- // }
 }
 
 END_EXTEND_CHECKER();
