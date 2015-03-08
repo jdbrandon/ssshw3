@@ -17,11 +17,12 @@ START_EXTEND_CHECKER( hello, int_store );
 ANALYZE_TREE()
 {
   CallSite randcall("rand");
-  Var a;
+  Var a,e;
   Expr b,c,d;
   int v,w;
   
   if(MATCH(a = b)){
+    //cout << "assigning: " << a << "value: " << b << endl;
     if(GET_STATE(a,v) && v == 1){
       if(!(GET_STATE(b,w) && w == 1)){
               cout << "Detected bug "<< a << " assigned to not random" << CURRENT_TREE << endl;
@@ -48,6 +49,28 @@ ANALYZE_TREE()
     }
 
     
+  }
+
+  if(MATCH(Addr(e))){
+    cout << "addr " << e << " " << CURRENT_TREE << endl;
+    COPY_STATE(CURRENT_TREE, e);
+  }
+
+  if(MATCH(Pointer(a) = b) && GET_STATE(b,v)){
+    cout << "pointer " << a << b << CURRENT_TREE << endl;
+    COPY_STATE(a,b);
+    COPY_STATE(CURRENT_TREE,a);
+  }
+
+  if(MATCH(Star(a) = b)){
+    cout << "star " << a << b <<CURRENT_TREE<< endl;
+    if(GET_STATE(a,v) && v == 1){
+      if(!(GET_STATE(b,v) && v==1)){
+        cout << "Detected bug assigned to not random" << CURRENT_TREE << endl;
+        SET_STATE(a,2);
+        SET_STATE(CURRENT_TREE,2);
+      }
+    }
   }
   //if(MATCH(a = randcall)) {
    //   cout << "Assigning "<< a << " to random" << CURRENT_TREE << endl;

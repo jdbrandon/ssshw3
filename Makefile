@@ -4,7 +4,7 @@ CC1=cov-translate
 CC1FLAGS=--dir analysis-dir
 CC2=gcc
 CC2FLAGS=-c
-all: $(TARG) test
+all: $(TARG) s4_test
 hello:
 	$(CC) hello
 prob2:
@@ -13,7 +13,7 @@ prob3:
 	$(CC) prob3
 prob4:
 	$(CC) prob4
-test: 
+s4_test: 
 	$(CC1) $(CC1FLAGS) $(CC2) $(CC2FLAGS) $@.c
 clean:
 	rm -r $(TARG) analysis-dir
