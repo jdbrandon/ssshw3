@@ -9,7 +9,7 @@
 
 // test1/hello.test.c
 // test input for 'hello' checker
-
+#include <string.h>
 int foo()
 {
   int x = 1;
@@ -29,6 +29,12 @@ int foo()
   y = -1;
   x << y;
   x >> y;
+
+  char buf2[1024];
+  char buf3[2048];
+  strncat(buf2, buf3, 2048);   //BUG 1
+  x = buf2[0];
+
   return x;
 }
 
