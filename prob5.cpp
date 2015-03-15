@@ -7,12 +7,11 @@
   customer.
 */
 
-// hello.c
-// trivial Extend checker
+// s5_overflow.cpp
 
 #include "extend-lang.hpp"     // Extend API
 
-START_EXTEND_CHECKER( hello, int_store );
+START_EXTEND_CHECKER( s5_overflow, int_store );
 
 ANALYZE_TREE()
 {
@@ -39,7 +38,8 @@ ANALYZE_TREE()
   if(MATCH(strncatcall(a,c,i))){
     //cout << "strncat on line num " << current_file_lineno() <<": possible overrun of array bounds. Destination: "<< a << " size: "<< v <<" <= " << i.llval() << endl;
     if(GET_STATE(a,v) && v<=i.llval()){
-      cout << endl << "ERROR on line num " << current_file_lineno() <<": possible overrun of array bounds. Destination: "<< a << " size: "<< v <<" <= " << i.llval() << endl;
+      OUTPUT_ERROR("line num " << current_file_lineno() <<": possible overrun of array bounds. Destination: "<< a << " size: "<< v <<" <= " << i.llval());
+      //cout << endl << "ERROR on line num " << current_file_lineno() <<": possible overrun of array bounds. Destination: "<< a << " size: "<< v <<" <= " << i.llval() << endl;
     }
   }
   
@@ -54,6 +54,6 @@ ANALYZE_TREE()
 
 END_EXTEND_CHECKER();
 
-MAKE_MAIN( hello )
+MAKE_MAIN( s5_overflow )
 
 // EOF

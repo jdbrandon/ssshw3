@@ -7,12 +7,11 @@
   customer.
 */
 
-// hello.c
-// trivial Extend checker
+// s3_no_rand_mod.cpp
 
 #include "extend-lang.hpp"     // Extend API
 
-START_EXTEND_CHECKER( hello, int_store );
+START_EXTEND_CHECKER( s3_no_rand_mod, int_store );
 
 ANALYZE_TREE()
 {
@@ -25,8 +24,8 @@ ANALYZE_TREE()
     //cout << "assigning: " << a << "value: " << b << endl;
     if(GET_STATE(a,v) && v == 1){
       if(!(GET_STATE(b,w) && w == 1)){
-              cout << "Detected bug "<< a << " assigned to not random" << CURRENT_TREE << endl;
-
+        OUTPUT_ERROR("possible bug: previously random variable changed to not random" << CURRENT_TREE);
+        cout << "Detected bug "<< a << " assigned to not random" << CURRENT_TREE << endl;
         SET_STATE(a,2);
       }
     }
@@ -44,6 +43,7 @@ ANALYZE_TREE()
       SET_STATE(CURRENT_TREE,1);
     }else if(v == 2 || w == 2){
       SET_STATE(CURRENT_TREE,2);
+      OUTPUT_ERROR("possible bug: previously random variable changed to not random" << CURRENT_TREE);
       cout << "Detected bug assigned to not random" << CURRENT_TREE << endl;
 
     }
@@ -66,6 +66,7 @@ ANALYZE_TREE()
     cout << "star " << a << b <<CURRENT_TREE<< endl;
     if(GET_STATE(a,v) && v == 1){
       if(!(GET_STATE(b,v) && v==1)){
+        OUTPUT_ERROR("possible bug: previously random variable changed to not random" << CURRENT_TREE);
         cout << "Detected bug assigned to not random" << CURRENT_TREE << endl;
         SET_STATE(a,2);
         SET_STATE(CURRENT_TREE,2);
@@ -80,6 +81,6 @@ ANALYZE_TREE()
 
 END_EXTEND_CHECKER();
 
-MAKE_MAIN( hello )
+MAKE_MAIN( s3_no_rand_mod )
 
 // EOF

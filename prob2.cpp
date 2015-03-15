@@ -7,27 +7,28 @@
   customer.
 */
 
-// hello.c
-// trivial Extend checker
+// s2_secure_coding.cpp
 
 #include "extend-lang.hpp"     // Extend API
 
-START_EXTEND_CHECKER( hello, simple );
+START_EXTEND_CHECKER( s2_secure_coding, simple );
 
 ANALYZE_TREE()
 {
-  //cout << "ANALYZE_TREE: " << CURRENT_TREE << endl;
-  //OUTPUT_ERROR("ANALYZE_TREE: " << CURRENT_TREE);
-  const char* names[2];
+  const char* names[4];
   names[0] = "strcpy";
   names[1] = "strcat";
+  names[2] = "strncat";
+  names[3] = "printf";
   Fun f(Fun::matchMultipleNames, names);
   //CallSite f(namedSybmols(names));
-  if( MATCH(f) ) cout << "call: " << CURRENT_TREE << endl;
+  if(MATCH(f)){
+    OUTPUT_ERROR("use of possibly unsafe function");
+  } 
 }
 
 END_EXTEND_CHECKER();
 
-MAKE_MAIN( hello )
+MAKE_MAIN( s2_secure_coding )
 
 // EOF

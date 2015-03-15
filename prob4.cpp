@@ -7,12 +7,11 @@
   customer.
 */
 
-// hello.c
-// trivial Extend checker
+// s4_shift_negative.cpp
 
 #include "extend-lang.hpp"     // Extend API
 
-START_EXTEND_CHECKER( hello, int_store );
+START_EXTEND_CHECKER( s4_shift_negative, int_store );
 
 ANALYZE_TREE()
 {
@@ -37,13 +36,14 @@ ANALYZE_TREE()
 
   if(MATCH(b << c) || MATCH(b >> c)){
     if(GET_STATE(c,v) && v == 0){
-      cout << "ERROR: Cannot bit shift by a negative number " << CURRENT_TREE << endl;
+      OUTPUT_ERROR("should not bit shift by a negative number");
+      //cout << "ERROR: Cannot bit shift by a negative number " << CURRENT_TREE << endl;
     }
   }
 }
 
 END_EXTEND_CHECKER();
 
-MAKE_MAIN( hello )
+MAKE_MAIN( s4_shift_negative )
 
 // EOF
