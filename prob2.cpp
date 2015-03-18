@@ -15,11 +15,12 @@ START_EXTEND_CHECKER( s2_secure_coding, simple );
 
 ANALYZE_TREE()
 {
-  const char* names[4];
+  const char* names[5];
   names[0] = "strcpy";
   names[1] = "strcat";
   names[2] = "strncat";
   names[3] = "printf";
+  names[4] = "gets";
   Fun f(Fun::matchMultipleNames, names);
   //CallSite f(namedSybmols(names));
   if(MATCH(f)){
