@@ -19,6 +19,7 @@ ANALYZE_TREE()
   Var a,e;
   Expr b,c,d;
   int v,w;
+  const ASTNode *t;
   
   if(MATCH(a = b)){
     //cout << "assigning: " << a << "value: " << b << endl;
@@ -69,6 +70,10 @@ ANALYZE_TREE()
         OUTPUT_ERROR("possible bug: previously random variable changed to not random" << CURRENT_TREE);
         cout << "Detected bug assigned to not random" << CURRENT_TREE << endl;
         SET_STATE(a,2);
+//set variable also
+	FOREACH_IN_STORE(t, v){
+	   cout << t << "+" << v << endl;
+	}
         SET_STATE(CURRENT_TREE,2);
       }
     }
