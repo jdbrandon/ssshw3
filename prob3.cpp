@@ -16,7 +16,7 @@ START_EXTEND_CHECKER( s3_no_rand_mod, int_store );
 ANALYZE_TREE()
 {
   CallSite randcall("rand");
-  Var a,e;
+  Var a,e,f;
   Expr b,c,d;
   int v,w;
   const ASTNode *t;
@@ -25,13 +25,13 @@ ANALYZE_TREE()
     //cout << "assigning: " << a << "value: " << b << endl;
     if(GET_STATE(a,v) && v == 1){
       if(!(GET_STATE(b,w) && w == 1)){
-        OUTPUT_ERROR("possible bug: previously random variable changed to not random" << CURRENT_TREE);
+//        OUTPUT_ERROR("possible bug: previously random variable changed to not random" << CURRENT_TREE);
         cout << "Detected bug "<< a << " assigned to not random" << CURRENT_TREE << endl;
         SET_STATE(a,2);
       }
     }
     if(GET_STATE(b,v) && v == 2){
-      cout << "ERROR: assigned non-random value" << CURRENT_TREE << endl;
+      OUTPUT_ERROR("ERROR: assigned non-random value" << CURRENT_TREE << endl);
     }else if(GET_STATE(b,v) && v == 1){
       cout << "Assigning "<< a << " to random" << CURRENT_TREE << endl;
       SET_STATE(a,1);
@@ -67,12 +67,15 @@ ANALYZE_TREE()
     cout << "star " << a << b <<CURRENT_TREE<< endl;
     if(GET_STATE(a,v) && v == 1){
       if(!(GET_STATE(b,v) && v==1)){
-        OUTPUT_ERROR("possible bug: previously random variable changed to not random" << CURRENT_TREE);
         cout << "Detected bug assigned to not random" << CURRENT_TREE << endl;
         SET_STATE(a,2);
 //set variable also
 	FOREACH_IN_STORE(t, v){
-	   cout << t << "+" << v << endl;
+	   if(MATCH_TREE(Pointer(a) = c,t)){
+	      if(MATCH_TREE(Addr(f), c) && GET_STATE(f, v) && v == 1) {
+	        SET_STATE(f,2);
+	      }
+	   }
 	}
         SET_STATE(CURRENT_TREE,2);
       }
